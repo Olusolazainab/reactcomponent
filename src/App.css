@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero {
+  background-color: black;
+  background: linear-gradient(to bottom, rgba(117, 19, 93, 0.73), rgba(117, 19, 93, 0.73)), url("./assets/images/dog-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  font-size: 2.5rem;
+}
+.hero-button {
+  background: transparent;
+  border-radius: 20px;
+  border: 1px solid white;
+  padding: 0.7rem;
   color: white;
+  margin: 0.7rem;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-button:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+  transition: 0.5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: purple;
+  padding: 0.8rem;
+  color: #ffffff;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items div {
+  margin-left: 10px;
+}
+
+.hero-span{
+  display: flex;
+}
+
+.features{
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 0;
+  height: 20vh;
+}
+
+.testimonials{
+background: #df27df;
+ height: 60vh; 
+ /* background: url(./assets/images/dog-img.jpg); */
+ background-repeat: no-repeat;
+ text-align: center;
+
+}
+
+/* .img{
+  background: url(./assets/images/bizinsider.png);
+  background: url(./assets/images/TechCrunch.png);
+  background: url(./assets/images/tnw.png);
+  background: url(./assets/images/mashable.png);
+}
+
+
+.dog{
+  margin-top: 50px;
+  border: 1px solid red;
+} */
+
+.footer{
+  background: purple;
+  color: white;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+.dog{
+  border-radius: 50%;
+  width: 50px;
+  margin-top: 50px;
+}
+
+.img-img{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sniff{
+  color: white;
+  padding-top: 20px;
 }
